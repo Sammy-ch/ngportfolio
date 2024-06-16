@@ -2,7 +2,7 @@ import React from 'react'
 
 function NavBarComponent() {
   return (
-    <div>NavBarComponent</div>
+    <div className='full-bleed border'>NavBarComponent</div>
   )
 }
 

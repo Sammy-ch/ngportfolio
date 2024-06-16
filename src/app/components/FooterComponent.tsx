@@ -2,7 +2,7 @@ import React from 'react'
 
 function FooterComponent() {
   return (
-    <div>FooterComponent</div>
+    <div className='full-bleed border'>FooterComponent</div>
   )
 }
 
