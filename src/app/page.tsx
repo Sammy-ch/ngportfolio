@@ -1,12 +1,12 @@
 import Image from "next/image";
-import HeaderComponent from "./components/HeaderComponent";
-import HeroComponent from "./components/HeroComponent";
-import ProjectsComponent from "./components/ProjectsComponent";
-import ServicesComponent from "./components/ServicesComponent";
-import TestimonialsComponent from "./components/TestimonialsComponent";
-import CTAComponent from "./components/CTAComponent";
-import FooterComponent from "./components/FooterComponent";
-import NavBarComponent from "./components/NavBarComponent";
+import HeaderComponent from "./UIcomponents/HeaderComponent";
+import HeroComponent from "./UIcomponents/HeroComponent";
+import ProjectsComponent from "./UIcomponents/ProjectsComponent";
+import ServicesComponent from "./UIcomponents/ServicesComponent";
+import TestimonialsComponent from "./UIcomponents/TestimonialsComponent";
+import CTAComponent from "./UIcomponents/CTAComponent";
+import FooterComponent from "./UIcomponents/FooterComponent";
+import NavBarComponent from "./UIcomponents/NavBarComponent";
 export default function Home() {
   return (
     <main className="min-h-screen wrapper">
