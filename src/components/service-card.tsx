@@ -27,8 +27,8 @@ interface ServiceCardProps {
 
 export function ServiceCard({title,description}:ServiceCardProps) {
   return (
-    <Card className=" text-gray-50 rounded-lg border-gray-900 overflow-hidden">
-      <CardContent className="p-6 bg-black sm:p-8 ">
+    <Card className=" text-gray-50 rounded-lg border-none overflow-hidden">
+      <CardContent className="p-6 bg-[#0C090A] sm:p-8 ">
         <div className="space-y-4">
           <div>
             <h3 className="text-2xl font-semibold">{title}</h3>

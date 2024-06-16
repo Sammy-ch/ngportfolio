@@ -16,7 +16,7 @@ function HeaderComponent() {
       />
 
       <div className='flex items-center gap-5'>
-        <Chip color="warning" variant="shadow">Available to work</Chip>
+        <Chip color="success"  variant="shadow">Available to work</Chip>
         <span className='bg-slate-800 h-5 w-[1px]'></span>
         <div className='flex items-center gap-2'>
           <NewTwitterIcon />
