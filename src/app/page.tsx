@@ -29,6 +29,13 @@ export default function Home() {
         <span className='text-md text-gray-500'>Let us work together on your next successfull product </span>
       </div>
       <ServicesComponent />
+      <div className='flex flex-col gap-2'>
+      <div className='flex gap-2'>
+        <FavouriteIcon />
+          <h3>Happy Clients</h3>
+      </div>
+        <span className='text-md text-gray-500'>Words from clients i have worked with </span>
+      </div>
       <TestimonialsComponent />
       <CTAComponent />
       <FooterComponent/>
@@ -55,5 +62,12 @@ const CardExchangeIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <path d="M2 10.0087C2 6.69376 4.68286 4.0127 8 4.0127L7.14286 5.72584" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     <path d="M10.9658 5.52418H21.7723M13.4658 10.9944H19.4999C20.8806 10.9944 21.9999 9.87585 21.9999 8.49607V4.49686C21.9999 3.11707 20.8806 1.99854 19.4999 1.99854H13.4658C12.0851 1.99854 10.9658 3.11707 10.9658 4.49686V8.49607C10.9658 9.87585 12.0851 10.9944 13.4658 10.9944Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     <path d="M2 16.5315H12.8065M4.5 22.0017H10.5341C11.9148 22.0017 13.0341 20.8832 13.0341 19.5034V15.5042C13.0341 14.1244 11.9148 13.0059 10.5341 13.0059H4.5C3.11929 13.0059 2 14.1244 2 15.5042V19.5034C2 20.8832 3.11929 22.0017 4.5 22.0017Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+
+const FavouriteIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} color={"#ffff"} fill={"none"} {...props}>
+    <path d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
   </svg>
 );
