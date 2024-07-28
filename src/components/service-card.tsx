@@ -35,8 +35,7 @@ export function ServiceCard({title,description}:ServiceCardProps) {
             <p className="text-gray-400 mt-1">{description}</p>
           </div>
           <div className="flex flex-col sm:flex-row sm:items-center  gap-4">
-            <Button className="w-full sm:w-auto">Get Started</Button>
-            <Button className="w-full sm:w-auto" variant="secondary">
+            <Button className="w-full sm:w-auto" variant="default">
               Book a Call
             </Button>
           </div>
