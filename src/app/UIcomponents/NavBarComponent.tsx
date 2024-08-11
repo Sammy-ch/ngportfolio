@@ -1,31 +1,37 @@
 import React from 'react'
 import Link from 'next/link'
 import {Button, ButtonGroup} from "@nextui-org/button";
-function NavBarComponent() {
-  return (
-    <div className='bg-[#1B1B1B] flex p-2 items-center justify-center w-full gap-5  mb-20 mt-10 sticky rounded-2xl'>
-      <Link href={"/"}>
-        Home
-      </Link>
-      <Link href={"/"}>
-        Portfolio
-      </Link> 
-      <Link href={"/"}>
-        Services
-      </Link>
-      <Link href={"/"}>
-        Testimonial
-      </Link> 
-      <Link href={"/"}>
-        CTA
-      </Link> 
-      <Link href={"/"}>
-        Contact
-      </Link> 
 
-      <Button color="primary" >
-        Book a call
-      </Button>    
+function NavBarComponent() {
+  const emailUser = "sammystcherubin";
+  const emailDomain = "gmail.com";
+  const email = `${emailUser}@${emailDomain}`;
+
+  return (
+    <div className='bg-[#1B1B1B] flex px-10 py-2 items-center justify-between w-full gap-5  mb-20 mt-10 sticky rounded-2xl'>
+      <div className='flex gap-5'>
+        <Link href={"/"}>
+          Home
+        </Link>
+        <Link href="#portfolio">
+          Portfolio
+        </Link>
+        <Link href={"#services"}>
+          Services
+        </Link>
+        <Link href={"#testimonials"}>
+          Testimonial
+        </Link>
+        <Link href={"#CTA"}>
+          CTA
+        </Link>
+      </div>
+
+      <a href={`mailto:${email}`}>
+        <Button color="primary">
+          Contact
+        </Button>
+      </a>
     </div>
   )
 }

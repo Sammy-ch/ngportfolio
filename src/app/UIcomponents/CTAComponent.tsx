@@ -2,7 +2,7 @@ import React from 'react'
 import {Card, CardHeader, CardBody, CardFooter, Image, Button} from "@nextui-org/react";
 function CTAComponent() {
   return (
-    <div className='my-10'>
+    <div id='CTA' className='my-10'>
           <Card isFooterBlurred className="w-full h-[400px] col-span-12 sm:col-span-7">
       <CardHeader className="absolute z-10 top-1 flex-col items-start">
         <p className="text-tiny text-black uppercase font-bold pb-5">Let's Work Together</p>

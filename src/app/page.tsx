@@ -12,7 +12,7 @@ export default function Home() {
     <main className="min-h-screen wrapper">
       <NavBarComponent/>
       <HeaderComponent />
-      <HeroComponent />
+      <HeroComponent  />
       <div className='flex flex-col gap-2'>
       <div className='flex gap-2'>
         <BriefcaseIcon />
