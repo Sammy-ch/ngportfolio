@@ -1,19 +1,88 @@
 import React from 'react'
+import { Carousel, Card } from '@/components/ui/apple-cards-carousel'
+import Image from 'next/image'
+
+
+interface ProjectDescriptionTypes{
+  image: string,
+  description: string,
+  techStacks:string[],
+}
+
 
 function ProjectsComponent() {
+  const cards = data.map((card, index) => (
+    <Card key={card.src} card={card} index={index} />
+  ));
   return (
-    <main className='full-bleed p-10' id='portfolio'>
-      <section className='full-bleed flex gap-5'>
-        <div className="h-96  bg-[url('/portfolio/eden-port.png')] bg-contain bg-no-repeat rounded-lg"></div>
-        <div className="h-96 w-full bg-[url('/portfolio/wasili-port.png')] bg-contain bg-no-repeat rounded-lg"></div>
-        <div className="h-96 w-full bg-[url('/portfolio/rweru-port.png')] bg-contain bg-no-repeat rounded-lg"></div>
-        <div className="h-96 w-full bg-[url('/portfolio/carhub-port.png')] bg-contain bg-no-repeat rounded-lg"></div>
-
-      </section>
-
-      </main>
+    <div className="w-full h-full py-20 full-bleed">
+      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-4xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+        My Recent Projects
+      </h2>
+      <Carousel items={cards} />
+    </div>
   )
 }
 
 export default ProjectsComponent
 
+const ProjectDescription = ({ image, description, techStacks }: ProjectDescriptionTypes) => {
+  return (
+    <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
+      <Image src={image} alt="Project Image" className="w-full h-auto rounded-lg mb-4" width={500} height={500} />
+      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto py-5">
+        <span className=" text-neutral-700 dark:text-neutral-200">
+          {description}
+        </span>
+      </p>
+      <ul className="list-disc list-inside text-neutral-600 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+        {techStacks.map((tech, index) => (
+          <li key={index}>{tech}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+const data = [
+  {
+    category: "Website",
+    title: "Eden Garden Resort",
+    src: "/portfolio/eden-port.png",
+    content: <ProjectDescription 
+                image="/portfolio/eden-port.png" 
+                description=" Eden Garden Resort, enhancing online presence and simplifying the booking process. It provides potential guests with a comprehensive overview of the resort, encouraging both direct bookings and positive engagement." 
+                techStacks={["React", "Next.js", "Tailwind CSS","Supabase","Redwood js"]} 
+             />,
+  },
+  {
+    category: "Website",
+    title: "Wasili",
+    src: "/portfolio/wasili-port.png",
+    content: <ProjectDescription 
+                image="/portfolio/wasili-port.png" 
+                description="Website concept for Wasili. The website features a sleek, user-friendly interface that connects riders with drivers across diverse urban and rural areas, catering to a range of transportation needs." 
+                techStacks={["React", "Next.js", "Tailwind CSS"]} 
+             />,
+  },
+  {
+    category: "Website",
+    title: "Rweru Import & Export",
+    src: "/portfolio/rweru-port.png",
+    content: <ProjectDescription 
+                image="/portfolio/rweru-port.png" 
+                description="Rweru website is a concept for a dynamic import-export platform designed to streamline trade operations across Africa. The website offers a comprehensive digital marketplace that connects buyers and sellers and detailed logistics tracking. With a focus on facilitating cross-border trade, Rweru provides a user-friendly interface and robust support for a variety of goods, ensuring efficient and transparent trade processes." 
+                techStacks={["React", "Next.js", "Tailwind CSS"]} 
+             />,
+  },
+  {
+    category: "Website",
+    title: "Carhub Platform",
+    src: "/portfolio/carhub-port.png",
+    content: <ProjectDescription 
+                image="/portfolio/carhub-port.png" 
+                description="CarHub is a specialized platform providing comprehensive information on available rental cars across Africa. The website offers a detailed directory of vehicles including specifications, pricing, and availability. Designed with a user-friendly interface, CarHub enables users to easily compare options and access up-to-date information to make informed decisions about their car rental needs. By focusing solely on vehicle information, CarHub aims to be the go-to resource for those seeking reliable and transparent data on rental cars throughout the continent." 
+                techStacks={["React", "Next.js", "Tailwind CSS"]} 
+             />,
+  },
+];

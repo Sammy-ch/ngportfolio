@@ -5,6 +5,10 @@ import {Chip} from "@nextui-org/chip";
 
 
 function HeaderComponent() {
+
+  const emailUser = "sammystcherubin";
+  const emailDomain = "gmail.com";
+  const email = `${emailUser}@${emailDomain}`;
   return (
     <div className='flex items-center justify-between'>
           <User   
@@ -12,16 +16,23 @@ function HeaderComponent() {
       description="Software Developer"
       avatarProps={{
         src: "./santana.jpg"
-      }}
+        }}
+      className=''
       />
 
       <div className='flex items-center gap-5'>
         <Chip color="success"  variant="shadow">Available to work</Chip>
-        <span className='bg-slate-800 h-5 w-[1px]'></span>
-        <div className='flex items-center gap-2'>
-          <NewTwitterIcon />
+        <span className='bg-slate-800 h-5 w-[1px] lg:flex hidden'></span>
+        <div className='lg:flex items-center gap-2 hidden'>
+        <a href="https://x.com/santansaint_" target="_blank" rel="noopener noreferrer">
+            <NewTwitterIcon />
+          </a>
+          <a href="https://www.linkedin.com/in/alain-cherubin-192a51266/" target="_blank" rel="noopener noreferrer">
           <LinkedinIcon />
+          </a>
+          <a href={`mailto:${email}`} className="py-2">
           <Mail01Icon />
+          </a>
         </div>
       </div>
       
