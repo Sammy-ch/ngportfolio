@@ -1,6 +1,6 @@
 import React from 'react'
 import { User } from "@nextui-org/user";
-
+import { IconBrandGithub } from '@tabler/icons-react';
 import {Chip} from "@nextui-org/chip";
 
 
@@ -33,11 +33,12 @@ function HeaderComponent() {
           <a href={`mailto:${email}`} className="py-2">
           <Mail01Icon />
           </a>
+
+          <a href="https://github.com/Sammy-ch" target="_blank" rel="noopener noreferrer">
+          <IconBrandGithub />
+          </a>
         </div>
       </div>
-      
-
-
     </div>
   )
 }
