@@ -21,7 +21,7 @@ function NavBarComponent() {
   };
 
   return (
-    <div className='sm:bg-[#1B1B1B] sm:bg-none flex px-0 lg:px-10 py-5 items-center justify-between w-full gap-5 mb-5 lg:mt-10 mt-0 sticky rounded-2xl'>
+    <div className='sm:bg-[#1B1B1B] sm:bg-none flex px-5 lg:px-10 py-5 items-center justify-between w-full gap-5 mb-5 lg:mt-10 mt-0 sticky rounded-2xl'>
       <div className='sm:flex gap-5 hidden'>
         <Link href={"/"}>
           Home
