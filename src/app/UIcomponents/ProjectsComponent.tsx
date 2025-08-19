@@ -15,7 +15,7 @@ function ProjectsComponent() {
     <Card key={card.src} card={card} index={index} />
   ));
   return (
-    <div className="w-full h-full py-20 full-bleed">
+    <div className="w-full h-full full-bleed">
       <Carousel items={cards} />
     </div>
   );

@@ -1,7 +1,7 @@
 import React from 'react'
 import { User } from "@nextui-org/user";
 import { IconBrandGithub } from '@tabler/icons-react';
-import {Chip} from "@nextui-org/chip";
+import { Chip } from "@nextui-org/chip";
 
 
 function HeaderComponent() {
@@ -10,32 +10,32 @@ function HeaderComponent() {
   const emailDomain = "gmail.com";
   const email = `${emailUser}@${emailDomain}`;
   return (
-    <div className='flex items-center justify-between'>
-          <User   
-      name="Alain Cherubin"
-      description="Software Developer"
-      avatarProps={{
-        src: "./santana.jpg"
+    <div className='flex items-center justify-between pt-10'>
+      <User
+        name="Alain Cherubin"
+        description="Software Developer"
+        avatarProps={{
+          src: "./santana.jpg"
         }}
-      className=''
+        className=''
       />
 
       <div className='flex items-center gap-5'>
-        <Chip color="success"  variant="shadow">Available to work</Chip>
+        <Chip color="success" variant="shadow">Available to work</Chip>
         <span className='bg-slate-800 h-5 w-[1px] lg:flex hidden'></span>
         <div className='lg:flex items-center gap-2 hidden'>
-        <a href="https://x.com/santansaint_" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/santansaint_" target="_blank" rel="noopener noreferrer">
             <NewTwitterIcon />
           </a>
           <a href="https://www.linkedin.com/in/alain-cherubin-192a51266/" target="_blank" rel="noopener noreferrer">
-          <LinkedinIcon />
+            <LinkedinIcon />
           </a>
           <a href={`mailto:${email}`} className="py-2">
-          <Mail01Icon />
+            <Mail01Icon />
           </a>
 
           <a href="https://github.com/Sammy-ch" target="_blank" rel="noopener noreferrer">
-          <IconBrandGithub />
+            <IconBrandGithub />
           </a>
         </div>
       </div>

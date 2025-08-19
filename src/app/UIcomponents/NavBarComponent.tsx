@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { Button } from "@nextui-org/button";
 import { IconBrandGithub } from '@tabler/icons-react';
-import {Chip} from "@nextui-org/chip";
+import { Chip } from "@nextui-org/chip";
 import {
   Sheet,
   SheetContent,
@@ -28,15 +28,6 @@ function NavBarComponent() {
         </Link>
         <Link href="#portfolio">
           Portfolio
-        </Link>
-        <Link href={"#services"}>
-          Services
-        </Link>
-        <Link href={"#testimonials"}>
-          Testimonial
-        </Link>
-        <Link href={"#CTA"}>
-          CTA
         </Link>
       </div>
 
@@ -78,23 +69,23 @@ function NavBarComponent() {
             </a>
 
             <div className='flex items-center gap-5'>
-        <span className='bg-slate-800 h-5 w-[1px] lg:flex hidden'></span>
-        <div className='flex items-center gap-5 lg:hidden'>
-        <a href="https://x.com/santansaint_" target="_blank" rel="noopener noreferrer">
-            <NewTwitterIcon />
-          </a>
-          <a href="https://www.linkedin.com/in/alain-cherubin-192a51266/" target="_blank" rel="noopener noreferrer">
-          <LinkedinIcon />
-          </a>
-          <a href={`mailto:${email}`} className="py-2">
-          <Mail01Icon />
-          </a>
+              <span className='bg-slate-800 h-5 w-[1px] lg:flex hidden'></span>
+              <div className='flex items-center gap-5 lg:hidden'>
+                <a href="https://x.com/santansaint_" target="_blank" rel="noopener noreferrer">
+                  <NewTwitterIcon />
+                </a>
+                <a href="https://www.linkedin.com/in/alain-cherubin-192a51266/" target="_blank" rel="noopener noreferrer">
+                  <LinkedinIcon />
+                </a>
+                <a href={`mailto:${email}`} className="py-2">
+                  <Mail01Icon />
+                </a>
 
-          <a href="https://github.com/Sammy-ch" target="_blank" rel="noopener noreferrer">
-          <IconBrandGithub />
-          </a>
-        </div>
-      </div>
+                <a href="https://github.com/Sammy-ch" target="_blank" rel="noopener noreferrer">
+                  <IconBrandGithub />
+                </a>
+              </div>
+            </div>
           </SheetContent>
         </Sheet>
       </div>

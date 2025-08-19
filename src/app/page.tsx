@@ -1,44 +1,24 @@
-import Image from "next/image";
 import HeaderComponent from "./UIcomponents/HeaderComponent";
 import HeroComponent from "./UIcomponents/HeroComponent";
 import ProjectsComponent from "./UIcomponents/ProjectsComponent";
-import ServicesComponent from "./UIcomponents/ServicesComponent";
-import TestimonialsComponent from "./UIcomponents/TestimonialsComponent";
-import CTAComponent from "./UIcomponents/CTAComponent";
 import FooterComponent from "./UIcomponents/FooterComponent";
-import NavBarComponent from "./UIcomponents/NavBarComponent";
+
+
 export default function Home() {
   return (
     <main className="min-h-screen wrapper">
-      <NavBarComponent/>
+      {/*<NavBarComponent /> */}
       <HeaderComponent />
-      <HeroComponent  />
+      <HeroComponent />
       <div className='flex flex-col gap-2'>
-      <div className='flex gap-2'>
-        <BriefcaseIcon />
+        <div className='flex gap-2'>
+          <BriefcaseIcon />
           <h3>Latest Work</h3>
-      </div>
-        <span className='text-md text-gray-500'>Some of the recent software products i have built </span>
+        </div>
+        <span className='text-md text-gray-500 '>Some of the recent software products i have built </span>
       </div>
       <ProjectsComponent />
-      <div className='flex flex-col gap-2'>
-      <div className='flex gap-2'>
-        <CardExchangeIcon />
-          <h3>Services I Offer</h3>
-      </div>
-        <span className='text-md text-gray-500'>Let us work together on your next successfull product </span>
-      </div>
-      <ServicesComponent />
-      <div className='flex flex-col gap-2'>
-      <div className='flex gap-2'>
-        <FavouriteIcon />
-          <h3>Happy Clients</h3>
-      </div>
-        <span className='text-md text-gray-500'>Words from clients i have worked with </span>
-      </div>
-      <TestimonialsComponent />
-      <CTAComponent />
-      <FooterComponent/>
+      <FooterComponent />
     </main>
   );
 }

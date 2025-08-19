@@ -3,12 +3,12 @@ import React from 'react'
 function HeroComponent() {
   return (
     <div className='py-10'>
-      <h1 className='pb-2 text-3xl'>Building Scalable Software</h1>
-      <span className='text-xl text-gray-500 '>
-        Enabling Success for Business Worldwide
-      </span>
+      <h1 className='pb-2 text-lg '>Backend Developer | Rust, C++, Java, NodeJs and more</h1>
       <p className='pt-10'>
-        Hi there, my name is Alain Cherubin and I am a Fullstack Software developer with expertise that spans across both front-end and back-end development, allowing me to build seamless and responsive websites that meet diverse business needs.My approach combines a strong understanding of user experience with a keen eye for design, ensuring that every project not only functions smoothly but also provides an engaging experience for its users. Whether working on a startup’s MVP or enhancing a well-established platform, I am committed to driving innovation and achieving excellence in every project.
+
+        Hey! my name is Alain and work primarily as a backend engineer. I&apos;ve worked with Java, Rust, Nodejs and other languages in designing backend systems that support seamless applications and tools to enhance team efficiency. I’ve developed reliable APIs, managed databases and backend architectures. I thrive on solving challenging problems and collaborating with diverse teams to deliver working solutions. In my free time, I dabble with graphics programming and embedded systems in zig.
+        Interested in collaborating on your next project? Let’s connect!
+
       </p>
 
     </div>
