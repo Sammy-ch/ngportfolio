@@ -15,7 +15,7 @@ export default function Home() {
           <BriefcaseIcon />
           <h3>Latest Work</h3>
         </div>
-        <span className='text-md text-gray-500 '>Some of the recent software products i have built </span>
+        <span className='text-md text-gray-500 '>Some of the products i have worked on</span>
       </div>
       <ProjectsComponent />
       <FooterComponent />
